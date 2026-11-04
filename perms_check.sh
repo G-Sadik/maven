@@ -2,9 +2,9 @@
 echo  "Enter the file path to check: " 
 read filename
 
-if [ -e "$filename" ]
+if [ -e $filename ]
 then
-	if [ -r "$filename" -a  -w "$filename" -a  -x "$filename" ]
+	if [ -r $filename -a  -w $filename -a  -x $filename ]
 	 then
     		echo "$filename  has read, write, and execute permissions."
 	else
